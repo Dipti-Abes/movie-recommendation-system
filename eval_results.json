@@ -1,0 +1,43 @@
+{
+  "global_mean": 3.623015873015873,
+  "all_movies": [
+    "3 Idiots",
+    "Andhadhun",
+    "Baahubali",
+    "Dangal",
+    "Drishyam",
+    "KGF",
+    "Pink",
+    "RRR"
+  ],
+  "baseline": {
+    "rmse": 0.8684,
+    "precision_at_5": null
+  },
+  "user_cf": {
+    "rmse": 0.9732,
+    "precision_at_5": 0.0745
+  },
+  "item_cf": {
+    "rmse": 1.0134,
+    "precision_at_5": 0.102
+  },
+  "svd": {
+    "rmse": 0.8684,
+    "precision_at_5": 0.102
+  },
+  "svd_best_params": {
+    "n_factors": 100,
+    "n_epochs": 20,
+    "lr_all": 0.005,
+    "reg_all": 0.02
+  },
+  "precision_at_5_notes": {
+    "eligible_users": 51,
+    "cold_start_excluded": 39,
+    "relevance_threshold": 4.0,
+    "denominator": 5,
+    "users_with_lt5_unseen": 2,
+    "total_movies": 8
+  }
+}
